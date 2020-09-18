@@ -7,13 +7,13 @@ describe( 'Database connection tests', () => {
 
     test( 'Can connect to database', async () => {
         const connectionDetails = {
-            connectionString: "postgres://actions_test@localhost:5432/actions_test"
+            connectionString: "postgres://actions_test:actions_test@localhost:5432/actions_test"
         };
         // const connectionDetails = {
         //     host: "localhost",
         //     port: 5432,
         //     user: "actions_test",
-        //     password: "",
+        //     password: "actions_test",
         //     database: "actions_test"
         // };
 
