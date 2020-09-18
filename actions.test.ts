@@ -15,7 +15,7 @@ describe( 'Database connection tests', () => {
 
         console.log( "Creating new client" );
         console.log( connectionDetails );
-        const client = new Client();
+        const client = new Client( connectionDetails );
 
         console.log( "Connecting" );
 
