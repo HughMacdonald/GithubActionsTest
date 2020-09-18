@@ -1,17 +1,21 @@
 'use strict';
 
-import { Client } from 'ts-postgres';
+// import { Client } from 'ts-postgres';
+import { Client } from 'pg';
 
 describe( 'Database connection tests', () => {
 
     test( 'Can connect to database', async () => {
         const connectionDetails = {
-            host: "localhost",
-            port: 5432,
-            user: "actions_test",
-            password: "",
-            database: "actions_test"
+            connectionString: "postgres://actions_test@localhost:5432/actions_test"
         };
+        // const connectionDetails = {
+        //     host: "localhost",
+        //     port: 5432,
+        //     user: "actions_test",
+        //     password: "",
+        //     database: "actions_test"
+        // };
 
         console.log( "Creating new client" );
         console.log( connectionDetails );
